@@ -76,6 +76,39 @@ namespace helloworld
                 System.Console.WriteLine($"Hello {name}");
             }
 
+
+            //switch
+            System.Console.WriteLine("What day of the week is it?");
+            string input = Console.ReadLine().ToLower();
+            switch (input)
+            {
+                case "monday":
+                    System.Console.WriteLine("5 until the weekend");
+                    break;
+                case "tuesday":
+                    System.Console.WriteLine("4 until the weekend");
+                    break;
+                case "Wednesday":
+                    System.Console.WriteLine("3 until the weekend");
+                    break;
+                case "thursday":
+                    System.Console.WriteLine("2 until the weekend");
+                    break;
+                case "friday":
+                    System.Console.WriteLine("1 until the weekend");
+                    break;
+                case "saturday":
+                    System.Console.WriteLine("it's the  weekend");
+                    break;
+                case "sunday":
+                    System.Console.WriteLine("it's the the weekend");
+                    break;
+                default:
+                    System.Console.WriteLine("That's a No Go ghostrider.");
+                    break;
+            }
+            System.Console.WriteLine("Goodbye");
+
         }
     }
 }
